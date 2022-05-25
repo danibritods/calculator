@@ -4,14 +4,14 @@ export default (props) => {
     function onPress(){
         switch (props.label) {
             case "C":
-                props.setDisplay("")
+                props.setDisplay(" ")
                 break;
             case "=":
                 try {
                     props.setDisplay(eval(props.display))
                 } catch (error) {
                     // props.setDisplay("Error, please reset.")
-                    props.setDisplay("")
+                    props.setDisplay(" ")
                 }
                 break;
             default:

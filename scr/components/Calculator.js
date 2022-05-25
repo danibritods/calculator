@@ -19,17 +19,27 @@ export default () => {
             lineHeight: 21,
             fontWeight: "bold",
             letterSpacing: 0.01,
-            color: "black"
+            color: "black",
+
+            alignItems: "center",
+            justifyContent: "center",
+            paddingVertical: 30,
+            paddingHorizontal: 30,
+            borderRadius: 1,
+            backgroundColor: "green",
+            overflow: "hidden",
+            margin: 1,
         },
         flex: {
             flexWrap: "wrap",
-            flexDirection: "row"
-            
+            flexDirection: "row",
+            minWidth: 250,
+            maxWidth: 250,
 
         }
     });
-    const [display, setDisplay] = useState("")
-    const labels = ["1","2","3","4","5","6","7","8","9","C","=","+","-"]
+    const [display, setDisplay] = useState(" ")
+    const labels = ["1","2","3","4","5","6","7","8","9","+","-","*","/","C","="]
 
     return (
         <>
