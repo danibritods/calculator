@@ -18,20 +18,25 @@ export default () => {
         display: {
             fontSize: 50,
             lineHeight: 21,
-            fontWeight: "normal",
+            // fontWeight: 0,
             letterSpacing: 0.01,
             color: "white",
             textAlign: "right",
             textAlignVertical: "down",
 
-            // alignItems: ,
+            alignItems: "flex-end",
             // justifyContent: "right",
-            paddingVertical: 30,
+            paddingVertical: 50,
             paddingHorizontal: 30,
             borderRadius: 1,
             backgroundColor: "#0c0704",
             overflow: "hidden",
-            margin: 1,
+            margin: 0,
+            borderBottomEndRadius: 0,
+            marginBottom: 0,
+            marginEnd: 0,
+            marginBottom: 0
+
         },
         keyboard: {
             flexWrap: "nowrap",
@@ -47,7 +52,7 @@ export default () => {
             flexWrap: "wrap-reverse",
             flexDirection: "row",
             // minWidth: 370,
-            maxWidth: 410,
+            maxWidth: 409,
             alignContent: "stretch",      
         },
         opeators: {
@@ -63,7 +68,7 @@ export default () => {
         textStyle: {
             fontSize: 50,
             fontFamily: "Sans",
-            fontWeight: "200",
+            fontWeight: "100",
         },
     });
     const [display, setDisplay] = useState(" ")
@@ -105,7 +110,7 @@ export default () => {
                     />
                     <CalcButton 
                         label={"."} 
-                        buttonStyle={[style.button,{backgroundColor: "#cfcdd0", paddingHorizontal: k*(57/50)}]} 
+                        buttonStyle={[style.button,{backgroundColor: "#cfcdd0", paddingHorizontal: k*(57.5/50)}]} 
                         textStyle={style.textStyle} 
                         setDisplay={setDisplay}
                         display={display}
