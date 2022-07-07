@@ -3,10 +3,13 @@ import { Text, TouchableOpacity } from "react-native"
 export default (props) => {   
     function onPress(){
         switch (props.label) {
-            case "C":
+            case "AC":
                 props.setDisplay(" ")
                 break;
             case "=":
+                if(props.display === " "){
+                    
+                } else 
                 try {
                     props.setDisplay(eval(props.display))
                 } catch (error) {
@@ -25,7 +28,7 @@ export default (props) => {
           style={props.buttonStyle}
           onPress={onPress}
           >
-            <Text>{props.label}</Text>
+            <Text style={props.textStyle}>{props.label}</Text>
         </TouchableOpacity>
     )
 }
